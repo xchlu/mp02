@@ -1,8 +1,8 @@
 import numpy as np
 
 
-def KNNRegressor(self, k=5):
-    def __init__(self):
+class KNNRegressor():
+    def __init__(self, k=5):
         self.k = k
         self.X = None
         self.y = None
@@ -23,7 +23,7 @@ def KNNRegressor(self, k=5):
         return np.array(y_pred)
 
 
-def LinearRegressor(self):
+class LinearRegressor():
     def __init__(self):
         self.beta = None
 
@@ -36,8 +36,8 @@ def LinearRegressor(self):
         return X.dot(self.beta)
 
 
-def BinnedRegressor(self, n_bins=10):
-    def __init__(self):
+def BinnedRegressor():
+    def __init__(self, n_bins=10):
         self.n_bins = n_bins
         self.bin_edges = None
         self.y_means = None
