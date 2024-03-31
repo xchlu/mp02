@@ -2,7 +2,7 @@ import numpy as np
 import data
 
 
-class ConformalPredictor():
+class ConformalPredictor:
     def __init__(self, regressor, alpha=0.05):
         self.regressor = regressor
         self.alpha = alpha
