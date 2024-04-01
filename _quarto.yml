@@ -1,0 +1,47 @@
+project:
+  type: website
+
+# tell quarto to read the generated sidebar
+metadata-files:
+  - _sidebar.yml
+
+
+quartodoc:
+  # the name used to import the package you want to create reference docs for
+  package: mluno
+
+  sections:
+    - title: Data Utilities
+      desc: Functions to inspect docstrings.
+      contents:
+        # the functions being documented in the package.
+        # you can refer to anything: class methods, modules, etc..
+        - data.make_line_data
+        - data.make_sine_data
+        - data.split_data
+
+    - title: Regressors
+      desc: Functions to fit regression models.
+      contents:
+        - regressors.LinearRegressor
+        - regressors.KNNRegressor
+
+    - title: Conformal Prediction
+      desc: Functions to make conformal predictions.
+      contents:
+        - conformal.ConformalPredictor
+
+    - title: Metrics
+      desc: Functions to evaluate models.
+      contents:
+            - metrics.rmse
+            - metrics.mae
+            - metrics.coverage
+            - metrics.sharpness
+
+    - title: Plotting
+      desc: Functions to plot data and models.
+      contents:
+            - plot.plot_predictions
+
+
