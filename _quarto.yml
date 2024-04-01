@@ -5,11 +5,16 @@ project:
 metadata-files:
   - _sidebar.yml
 
+website:
+  title: MLUno
+  navbar:
+    left:
+      - text: Reference
+        href: reference/index.qmd
 
 quartodoc:
-  # the name used to import the package you want to create reference docs for
   package: mluno
-
+  sidebar: _sidebar.yml
   sections:
     - title: Data Utilities
       desc: Functions to inspect docstrings.
