@@ -11,7 +11,13 @@ wheels/
 .pytest_cache/
 .ruff_cache/
 /docs/
+/_site/
 /reference/
 /.quarto/
 .DS_Store
 objects.json
+
+_sidebar.yml
+requirements-dev.lock
+requirements.lock
+/styles.css

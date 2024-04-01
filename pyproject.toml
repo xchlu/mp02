@@ -10,6 +10,7 @@ dependencies = [
     "numpy>=1.26.4",
     "matplotlib>=3.8.3",
     "quartodoc>=0.7.2",
+    "numpydoc>=1.7.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -20,7 +21,9 @@ build-backend = "hatchling.build"
 
 [tool.rye]
 managed = true
-dev-dependencies = []
+dev-dependencies = [
+    "scikit-learn>=1.4.1.post1",
+]
 
 [tool.hatch.metadata]
 allow-direct-references = true
