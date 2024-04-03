@@ -7,6 +7,7 @@ metadata-files:
   - _sidebar.yml
 
 website:
+  page-navigation: true
   title: MLUno
   navbar:
     left:
